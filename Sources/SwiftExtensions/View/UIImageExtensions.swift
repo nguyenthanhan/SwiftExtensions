@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+@available(iOS 9.0, *)
 extension UIImageView {
     func setRoundedWithBorder(borderColor : UIColor = UIColor.lightGray, borderWidth : CGFloat = 1) {
         self.layer.borderWidth = borderWidth

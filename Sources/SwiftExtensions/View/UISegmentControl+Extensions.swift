@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+@available(iOS 9.0, *)
 extension UISegmentedControl{
     func setSelectedSegmentColor(tintColor: UIColor) {
         if #available(iOS 13.0, *) {
@@ -18,6 +19,7 @@ extension UISegmentedControl{
     }
 }
 
+@available(iOS 9.0, *)
 extension UISearchBar {
 
     func getTextField() -> UITextField? { return value(forKey: "searchField") as? UITextField }
@@ -43,6 +45,7 @@ extension UISearchBar {
     }
 }
 
+@available(iOS 9.0, *)
 private extension UITextField {
 
     private class Label: UILabel {

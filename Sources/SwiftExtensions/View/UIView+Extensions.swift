@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+@available(iOS 9.0, *)
 extension UIView {
     func endOfView() -> CGFloat {
         return (self.frame.origin.y+self.frame.size.height)
@@ -37,6 +38,7 @@ extension UIView {
 }
 
 // MARK: Auto Layout
+@available(iOS 9.0, *)
 extension UIView {
 
     func addConstraintsWithFormat(_ format: String, views: UIView...) {
@@ -339,6 +341,7 @@ extension UIView {
     }
 }
 
+@available(iOS 9.0, *)
 extension UIView {
     @IBInspectable var cornerRadius: CGFloat {
         get {
@@ -361,12 +364,14 @@ extension UIView {
     }
 }
 
+@available(iOS 9.0, *)
 extension UIView {
     class func fromNib<T: UIView>() -> T {
         return Bundle.main.loadNibNamed(String(describing: T.self), owner: nil, options: nil)![0] as! T
     }
 }
 
+@available(iOS 9.0, *)
 extension UIView {
     func roundCorners(rectCorner: UIRectCorner, radius: CGFloat) {
         let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: rectCorner, cornerRadii: CGSize(width: radius, height: radius))
