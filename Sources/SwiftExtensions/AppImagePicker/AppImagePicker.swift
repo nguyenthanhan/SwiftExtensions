@@ -109,5 +109,6 @@ extension AppImagePicker: UIImagePickerControllerDelegate {
     }
 }
 
+@available(iOS 11.0, *)
 extension AppImagePicker: UINavigationControllerDelegate {
 }
