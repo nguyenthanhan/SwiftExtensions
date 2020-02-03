@@ -1,3 +1,6 @@
+import Foundation
+import UIKit
+
 public typealias DispatchBlock = () -> Swift.Void
 
 public extension DispatchWorkItem {

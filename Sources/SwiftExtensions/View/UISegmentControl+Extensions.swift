@@ -5,7 +5,7 @@
 //  Created by An Nguyen Thanh on 11/18/19.
 //  Copyright © 2019 Vinova. All rights reserved.
 //
-
+import Foundation
 import UIKit
 
 extension UISegmentedControl{

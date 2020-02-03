@@ -5,7 +5,7 @@
 //  Created by An Nguyen Thanh on 8/22/19.
 //  Copyright © 2019 KaiPham. All rights reserved.
 //
-
+import Foundation
 import UIKit
 
 extension UIImageView {
