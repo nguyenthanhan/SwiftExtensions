@@ -80,6 +80,7 @@ class AppImagePicker: NSObject {
     }
 }
 
+@available(iOS 11.0, *)
 extension AppImagePicker: UIImagePickerControllerDelegate {
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

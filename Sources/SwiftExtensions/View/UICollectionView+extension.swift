@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+@available(iOS 9.0, *)
 extension UICollectionView {
     func register<T: UICollectionViewCell>(_: T.Type, reuseIdentifier: String? = nil) {
         self.register(T.self, forCellWithReuseIdentifier: reuseIdentifier ?? String(describing: T.self))

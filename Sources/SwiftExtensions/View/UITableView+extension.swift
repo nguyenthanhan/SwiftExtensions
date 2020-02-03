@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+@available(iOS 9.0, *)
 extension UITableView {
     func register<T: UITableViewCell>(_: T.Type, reuseIdentifier: String? = nil) {
         self.register(T.self, forCellReuseIdentifier: reuseIdentifier ?? String(describing: T.self))
@@ -46,6 +47,7 @@ extension UITableView {
     }
 }
 
+@available(iOS 9.0, *)
 extension UITableViewHeaderFooterView {
     static var className: String {
         return String(describing: self)
