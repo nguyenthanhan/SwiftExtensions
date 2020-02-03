@@ -14,6 +14,7 @@ protocol AppImagePickerDelegate: class {
     func invalidFormat()
 }
 
+@available(iOS 11.0, *)
 class AppImagePicker: NSObject {
     
     private let pickerController: UIImagePickerController
